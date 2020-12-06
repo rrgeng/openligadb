@@ -1,0 +1,22 @@
+{
+    "name": "rrgeng/openligadb",
+    "description": "Client library for OpneLigaDB Soap Service",
+    "require": {
+        "php": ">=5.3.3",
+        "ext-soap": "*",
+        "ext-mbstring": "*",
+        "wsdltophp/packagebase": "~2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roland Geng",
+            "email": "rolandgeng@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "RrGeng\\OpenligaDB\\": "./src\\"
+        }
+    }
+}
