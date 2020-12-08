@@ -1,6 +1,6 @@
 {
     "name": "rrgeng/openligadb",
-    "description": "Client library for OpneLigaDB Soap Service",
+    "description": "Client library for OpenLigaDB Soap Service",
     "require": {
         "php": ">=5.3.3",
         "ext-soap": "*",
