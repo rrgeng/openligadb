@@ -4,6 +4,11 @@ This library provides a simple wrapper to the OpenLigaDB SOAP service.
 
 Website: https://www.openligadb.de/
 
+## Installation
+```
+composer require rrgeng/openligadb
+```
+
 ## Quickstart
 ```php
 require_once '../vendor/autoload.php';
@@ -20,12 +25,6 @@ if ($get->GetAvailLeagues(new \RrGeng\OpenligaDB\StructType\GetAvailLeagues()) !
 } else {
     print_r($get->getLastError());
 }
-
-```
-
-## Installation
-```
-composer require rrgeng/openligadb
 ```
 
 ## API Overview
