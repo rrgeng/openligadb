@@ -25,5 +25,5 @@ if ($get->GetAvailLeagues(new \RrGeng\OpenligaDB\StructType\GetAvailLeagues()) !
 
 ## Installation
 ```
-composer require composer require rrgeng/openligadb
+composer require rrgeng/openligadb
 ```
