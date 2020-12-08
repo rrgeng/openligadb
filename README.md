@@ -5,7 +5,7 @@ This library provides a simple wrapper to the OpenLigaDB SOAP service.
 Website: https://www.openligadb.de/
 
 ## Quickstart
-```
+```php
 require_once '../vendor/autoload.php';
 
 $options = array(
