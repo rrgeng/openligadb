@@ -9,7 +9,6 @@ use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
  */
 class ArrayOfTeam extends AbstractStructArrayBase
 {
-
     /**
      * The Team
      * - maxOccurs: unbounded

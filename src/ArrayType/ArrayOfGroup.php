@@ -48,7 +48,6 @@ class ArrayOfGroup extends AbstractStructArrayBase
         $message       = '';
         $invalidValues = [];
         foreach ($values as $arrayOfGroupGroupItem) {
-            // validation for constraint: itemType
             if (!$arrayOfGroupGroupItem instanceof \RrGeng\OpenligaDB\StructType\Group) {
                 $invalidValues[] = is_object($arrayOfGroupGroupItem) ? get_class($arrayOfGroupGroupItem) : sprintf('%s(%s)', gettype($arrayOfGroupGroupItem), var_export($arrayOfGroupGroupItem, true));
             }
@@ -68,7 +67,6 @@ class ArrayOfGroup extends AbstractStructArrayBase
      */
     public function setGroup(array $group = array())
     {
-        // validation for constraint: array
         if ('' !== ($groupArrayErrorMessage = self::validateGroupForArrayConstraintsFromSetGroup($group))) {
             throw new \InvalidArgumentException($groupArrayErrorMessage, __LINE__);
         }
@@ -84,7 +82,6 @@ class ArrayOfGroup extends AbstractStructArrayBase
      */
     public function addToGroup(\RrGeng\OpenligaDB\StructType\Group $item)
     {
-        // validation for constraint: itemType
         if (!$item instanceof \RrGeng\OpenligaDB\StructType\Group) {
             throw new \InvalidArgumentException(sprintf('The Group property can only contain items of type \RrGeng\OpenligaDB\StructType\Group, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }

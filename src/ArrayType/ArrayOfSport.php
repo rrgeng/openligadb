@@ -48,7 +48,7 @@ class ArrayOfSport extends AbstractStructArrayBase
      */
     public static function validateSportForArrayConstraintsFromSetSport(array $values = array())
     {
-        $message       = '';
+        $message = '';
         $invalidValues = [];
         foreach ($values as $arrayOfSportSportItem) {
             if (!$arrayOfSportSportItem instanceof \RrGeng\OpenligaDB\StructType\Sport) {

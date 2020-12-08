@@ -9,7 +9,6 @@ use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
  */
 class ArrayOfMatchdata extends AbstractStructArrayBase
 {
-
     /**
      * The Matchdata
      * - maxOccurs: unbounded
@@ -45,7 +44,7 @@ class ArrayOfMatchdata extends AbstractStructArrayBase
      */
     public static function validateMatchdataForArrayConstraintsFromSetMatchdata(array $values = array())
     {
-        $message       = '';
+        $message = '';
         $invalidValues = [];
         foreach ($values as $arrayOfMatchdataMatchdataItem) {
             if (!$arrayOfMatchdataMatchdataItem instanceof \RrGeng\OpenligaDB\StructType\Matchdata) {

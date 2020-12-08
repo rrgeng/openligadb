@@ -9,7 +9,6 @@ use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
  */
 class ArrayOfMatchResult extends AbstractStructArrayBase
 {
-
     /**
      * The matchResult
      * - maxOccurs: unbounded

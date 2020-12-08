@@ -47,7 +47,6 @@ class ArrayOfGoal extends AbstractStructArrayBase
         $message       = '';
         $invalidValues = [];
         foreach ($values as $arrayOfGoalGoalItem) {
-            // validation for constraint: itemType
             if (!$arrayOfGoalGoalItem instanceof \RrGeng\OpenligaDB\StructType\Goal) {
                 $invalidValues[] = is_object($arrayOfGoalGoalItem) ? get_class($arrayOfGoalGoalItem) : sprintf('%s(%s)', gettype($arrayOfGoalGoalItem), var_export($arrayOfGoalGoalItem, true));
             }

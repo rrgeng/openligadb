@@ -9,7 +9,6 @@ use \WsdlToPhp\PackageBase\AbstractStructArrayBase;
  */
 class ArrayOfFussballdaten extends AbstractStructArrayBase
 {
-
     /**
      * The Fussballdaten
      * - maxOccurs: unbounded
@@ -48,7 +47,6 @@ class ArrayOfFussballdaten extends AbstractStructArrayBase
         $message       = '';
         $invalidValues = [];
         foreach ($values as $arrayOfFussballdatenFussballdatenItem) {
-            // validation for constraint: itemType
             if (!$arrayOfFussballdatenFussballdatenItem instanceof \RrGeng\OpenligaDB\StructType\Fussballdaten) {
                 $invalidValues[] = is_object($arrayOfFussballdatenFussballdatenItem) ? get_class($arrayOfFussballdatenFussballdatenItem) : sprintf('%s(%s)', gettype($arrayOfFussballdatenFussballdatenItem), var_export($arrayOfFussballdatenFussballdatenItem, true));
             }
@@ -68,7 +66,6 @@ class ArrayOfFussballdaten extends AbstractStructArrayBase
      */
     public function setFussballdaten(array $fussballdaten = array())
     {
-        // validation for constraint: array
         if ('' !== ($fussballdatenArrayErrorMessage = self::validateFussballdatenForArrayConstraintsFromSetFussballdaten($fussballdaten))) {
             throw new \InvalidArgumentException($fussballdatenArrayErrorMessage, __LINE__);
         }
@@ -84,7 +81,6 @@ class ArrayOfFussballdaten extends AbstractStructArrayBase
      */
     public function addToFussballdaten(\RrGeng\OpenligaDB\StructType\Fussballdaten $item)
     {
-        // validation for constraint: itemType
         if (!$item instanceof \RrGeng\OpenligaDB\StructType\Fussballdaten) {
             throw new \InvalidArgumentException(sprintf('The Fussballdaten property can only contain items of type \RrGeng\OpenligaDB\StructType\Fussballdaten, %s given', is_object($item) ? get_class($item) : (is_array($item) ? implode(', ', $item) : gettype($item))), __LINE__);
         }
