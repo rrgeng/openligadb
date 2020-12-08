@@ -27,3 +27,6 @@ if ($get->GetAvailLeagues(new \RrGeng\OpenligaDB\StructType\GetAvailLeagues()) !
 ```
 composer require rrgeng/openligadb
 ```
+
+## API Overview
+A full documentation and samples can be found [here](https://github.com/OpenLigaDB/OpenLigaDB-Samples).
