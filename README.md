@@ -13,9 +13,11 @@ composer require rrgeng/openligadb
 ```php
 require_once '../vendor/autoload.php';
 
+use \WsdlToPhp\PackageBase\AbstractSoapClientBase;
+
 $options = array(
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_URL => 'https://www.openligadb.de/Webservices/Sportsdata.asmx?WSDL',
-    \WsdlToPhp\PackageBase\AbstractSoapClientBase::WSDL_CLASSMAP => \RrGeng\OpenligaDB\ClassMap::get(),
+    AbstractSoapClientBase::WSDL_URL => 'https://www.openligadb.de/Webservices/Sportsdata.asmx?WSDL',
+    AbstractSoapClientBase::WSDL_CLASSMAP => \RrGeng\OpenligaDB\ClassMap::get(),
 );
 
 $get = new \RrGeng\OpenligaDB\ServiceType\Get($options);
