@@ -33,7 +33,7 @@ if ($get->GetAvailLeagues(new \RrGeng\OpenligaDB\StructType\GetAvailLeagues()) !
 A full documentation and samples can be found [here](https://github.com/OpenLigaDB/OpenLigaDB-Samples).
 
 ## Acknowledgement
-[WsdlToPhp PackageGenerator](https://github.com/WsdlToPhp/PackageGenerator)
+https://github.com/WsdlToPhp/PackageGenerator
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE) for more information.
